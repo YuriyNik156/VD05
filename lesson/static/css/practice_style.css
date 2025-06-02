@@ -1,0 +1,26 @@
+.card {
+    width: 400px;
+    height: 650px;
+    background-color: burlywood;
+    border-radius: 60px;
+}
+
+.photo {
+    height: 40%;
+    padding: 40px;
+}
+
+.info {
+    height: 40%;
+    padding: 40px;
+    position: relative;
+    bottom: 50%;
+}
+
+img {
+    height: 200px;
+    position: relative;
+    left: 12%;
+    bottom: 50%;
+    border-radius: 20px;
+}
