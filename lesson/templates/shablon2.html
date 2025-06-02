@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='hometask_style.css') }}">
+    <img src="{{ url_for('static', filename='Magnus Carlsen.jpg') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Шахматисты</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/sportsmans/">Спортсмены</a>
+  </li>
+</ul>
+
+    {% block content %}
+
+    {% endblock %}
+
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Логотип и краткое описание -->
+      <div class="col-md-4 mb-3">
+        <h5>Шахматы Онлайн</h5>
+        <p>Лучший ресурс для любителей шахмат. Играйте, учитесь и побеждайте!</p>
+      </div>
+
+      <!-- Быстрые ссылки -->
+      <div class="col-md-4 mb-3">
+        <h5>Быстрые ссылки</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Главная</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Играть</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Обучение</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Контакты</a></li>
+        </ul>
+      </div>
+
+      <!-- Социальные сети -->
+      <div class="col-md-4 mb-3">
+        <h5>Мы в соцсетях</h5>
+        <div>
+          <a href="#" class="text-white me-3">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+        </div>
+        <div>
+          <a href="#" class="text-white me-3">
+            <i class="bi bi-twitter"></i> Twitter
+          </a>
+        </div>
+        <div>
+          <a href="#" class="text-white">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-3">
+      <p class="mb-0">&copy; 2023 Шахматы Онлайн. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{caption}}</title>
-    <link rel = "stylesheet" href = "{{ url_for('static', filename='hometask_style.css') }}">
-    <img src="{{ url_for('static', filename='Magnus Carlsen.jpg') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-</head>
-<body>
+{% extends "shablon2.html" %}
 
-<ul class="nav nav-pills">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/">Шахматисты</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/sportsmans/">Спортсмены</a>
-  </li>
-</ul>
+{% block title %}
+    Сильнейшие шахматисты по рейтингу ФИДЕ
+{% end block %}
 
-<h1 class = "main-title">Сильнейшие шахматисты по рейтингу ФИДЕ</h1>
+{% block contant %}
 
 <div class = "card-container">
     <div class = "card">
@@ -82,7 +68,4 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-
-</body>
-</html>
+{% end block %}
