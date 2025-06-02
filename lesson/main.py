@@ -16,7 +16,7 @@ def chessmans(password = None):
                     "Звездою севера явись!"
                   ]
     }
-    return render_template("shablon.html")
+    return render_template("shablon.html", **context)
 
 @app.route("/shablon/")
 def chessmans2(password = None):
