@@ -6,14 +6,14 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def index(password = None):
+def index():
     context = {
         "title" : "Главная страница сайта"
     }
     return render_template("home.html", **context)
 
 @app.route("/blog/")
-def blog(password = None):
+def blog():
     context = {
         "title": "Страница блога"
     }
