@@ -12,7 +12,7 @@ def index():
     }
     return render_template("home.html", **context)
 
-@app.route("/blog/")
+@app.route("/about/")
 def blog():
     context = {
         "title": "Страница блога"
